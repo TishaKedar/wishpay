@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, Lock, Building2, Wallet } from 'lucide-react';
+
 
 export default function ValuesSection() {
   return (
@@ -27,9 +27,14 @@ export default function ValuesSection() {
             {/* Security Teams - Top Left */}
             <div className="absolute top-20 left-44 max-w-xs">
               <div className="flex flex-col items-start">
-                <div className="w-14 h-14 bg-[#7c40fe] rounded-full flex items-center justify-center mb-4">
-                  <Shield className="w-7 h-7 text-white" />
-                </div>
+              <div className="w-14 h-14 bg-[#7c40fe] rounded-full flex items-center justify-center mb-4">
+  <img
+    src="/assests/shield.svg"
+    alt="Logo"
+    className="w-7 h-7 object-contain"
+  />
+</div>
+
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   Security Teams
                 </h3>
@@ -43,7 +48,11 @@ export default function ValuesSection() {
             <div className="absolute top-1 right-44 max-w-xs">
               <div className="flex flex-col items-start">
                 <div className="w-14 h-14 bg-[#7c40fe] rounded-full flex items-center justify-center mb-4">
-                  <Lock className="w-7 h-7 text-white" />
+                <img
+    src="/assests/people.svg"
+    alt="Logo"
+    className="w-7 h-7 object-contain"
+  />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   Authentication
@@ -67,7 +76,11 @@ export default function ValuesSection() {
             <div className="absolute bottom-20 left-52 max-w-xs">
               <div className="flex flex-col items-start">
                 <div className="w-14 h-14 bg-[#7c40fe] rounded-full flex items-center justify-center mb-4">
-                  <Building2 className="w-7 h-7 text-white" />
+                <img
+    src="/assests/build.svg"
+    alt="Logo"
+    className="w-7 h-7 object-contain"
+  />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   Safety Funds
@@ -82,7 +95,11 @@ export default function ValuesSection() {
             <div className="absolute bottom-32 right-32 max-w-xs">
               <div className="flex flex-col items-start">
                 <div className="w-14 h-14 bg-[#7c40fe] rounded-full flex items-center justify-center mb-4">
-                  <Wallet className="w-7 h-7 text-white" />
+                <img
+    src="/assests/main-acc.svg"
+    alt="Logo"
+    className="w-7 h-7 object-contain"
+  />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   Account Place
@@ -94,72 +111,88 @@ export default function ValuesSection() {
             </div>
           </div>
 
-          {/* Medium Screen Layout - Adjusted positioning */}
+          {/* Medium Screen Layout - Optimized for 1024-1279px */}
           <div className="hidden md:block xl:hidden relative min-h-[500px]">
-            {/* Security Teams - Top Left */}
-            <div className="absolute top-12 left-2 max-w-[180px]">
+            {/* Security Teams - Top Left - Closer to card */}
+            <div className="absolute top-8 left-8 lg:left-16 max-w-[200px] lg:max-w-[220px]">
               <div className="flex flex-col items-start">
-                <div className="w-11 h-11 bg-[#7c40fe] rounded-full flex items-center justify-center mb-2">
-                  <Shield className="w-5 h-5 text-white" />
+                <div className="w-12 h-12 bg-[#7c40fe] rounded-full flex items-center justify-center mb-3">
+                <img
+    src="/assests/shield.svg"
+    alt="Logo"
+    className="w-7 h-7 object-contain"
+  />
                 </div>
-                <h3 className="text-base font-semibold text-gray-900 mb-1">
+                <h3 className="text-lg font-semibold text-gray-900 mb-1.5">
                   Security Teams
                 </h3>
-                <p className="text-gray-600 text-xs leading-tight">
+                <p className="text-gray-600 text-sm leading-snug">
                   Security teams work to keep your money safe
                 </p>
               </div>
             </div>
 
-            {/* Authentication - Top Right */}
-            <div className="absolute top-4 right-2 max-w-[180px]">
+            {/* Authentication - Top Right - Closer to card */}
+            <div className="absolute top-4 right-8 lg:right-16 max-w-[200px] lg:max-w-[220px]">
               <div className="flex flex-col items-start">
-                <div className="w-11 h-11 bg-[#7c40fe] rounded-full flex items-center justify-center mb-2">
-                  <Lock className="w-5 h-5 text-white" />
+                <div className="w-12 h-12 bg-[#7c40fe] rounded-full flex items-center justify-center mb-3">
+                <img
+    src="/assests/people.svg"
+    alt="Logo"
+    className="w-7 h-7 object-contain"
+  />
                 </div>
-                <h3 className="text-base font-semibold text-gray-900 mb-1">
+                <h3 className="text-lg font-semibold text-gray-900 mb-1.5">
                   Authentication
                 </h3>
-                <p className="text-gray-600 text-xs leading-tight">
+                <p className="text-gray-600 text-sm leading-snug">
                   We use top authentication to protect your account
                 </p>
               </div>
             </div>
 
-            {/* Credit Card - Center (Smaller) */}
+            {/* Credit Card - Center - Optimized size */}
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <img 
                 src="/assests/big-card.png" 
                 alt="Credit Card" 
-                className="w-[280px] lg:w-[320px] h-auto"
+                className="w-[300px] lg:w-[360px] h-auto"
               />
             </div>
 
-            {/* Safety Funds - Bottom Left */}
-            <div className="absolute bottom-12 left-4 max-w-[180px]">
+            {/* Safety Funds - Bottom Left - Closer to card */}
+            <div className="absolute bottom-8 left-8 lg:left-20 max-w-[200px] lg:max-w-[220px]">
               <div className="flex flex-col items-start">
-                <div className="w-11 h-11 bg-[#7c40fe] rounded-full flex items-center justify-center mb-2">
-                  <Building2 className="w-5 h-5 text-white" />
+                <div className="w-12 h-12 bg-[#7c40fe] rounded-full flex items-center justify-center mb-3">
+                <img
+    src="/assests/build.svg"
+    alt="Logo"
+    className="w-7 h-7 object-contain"
+  />
                 </div>
-                <h3 className="text-base font-semibold text-gray-900 mb-1">
+                <h3 className="text-lg font-semibold text-gray-900 mb-1.5">
                   Safety Funds
                 </h3>
-                <p className="text-gray-600 text-xs leading-tight">
+                <p className="text-gray-600 text-sm leading-snug">
                   Hold money with established financial institutions
                 </p>
               </div>
             </div>
 
-            {/* Account Place - Bottom Right */}
-            <div className="absolute bottom-20 right-4 max-w-[180px]">
+            {/* Account Place - Bottom Right - Closer to card */}
+            <div className="absolute bottom-16 right-8 lg:right-20 max-w-[200px] lg:max-w-[220px]">
               <div className="flex flex-col items-start">
-                <div className="w-11 h-11 bg-[#7c40fe] rounded-full flex items-center justify-center mb-2">
-                  <Wallet className="w-5 h-5 text-white" />
+                <div className="w-12 h-12 bg-[#7c40fe] rounded-full flex items-center justify-center mb-3">
+                <img
+    src="/assests/main-acc.svg"
+    alt="Logo"
+    className="w-7 h-7 object-contain"
+  />
                 </div>
-                <h3 className="text-base font-semibold text-gray-900 mb-1">
+                <h3 className="text-lg font-semibold text-gray-900 mb-1.5">
                   Account Place
                 </h3>
-                <p className="text-gray-600 text-xs leading-tight">
+                <p className="text-gray-600 text-sm leading-snug">
                   Place all your account, all in one place
                 </p>
               </div>
@@ -182,7 +215,11 @@ export default function ValuesSection() {
               {/* Security Teams */}
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 w-12 h-12 bg-[#7c40fe] rounded-full flex items-center justify-center">
-                  <Shield className="w-6 h-6 text-white" />
+                <img
+    src="/assests/shield.svg"
+    alt="Logo"
+    className="w-7 h-7 object-contain"
+  />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">
@@ -197,7 +234,11 @@ export default function ValuesSection() {
               {/* Authentication */}
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 w-12 h-12 bg-[#7c40fe] rounded-full flex items-center justify-center">
-                  <Lock className="w-6 h-6 text-white" />
+                <img
+    src="/assests/people.svg"
+    alt="Logo"
+    className="w-7 h-7 object-contain"
+  />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">
@@ -212,7 +253,11 @@ export default function ValuesSection() {
               {/* Safety Funds */}
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 w-12 h-12 bg-[#7c40fe] rounded-full flex items-center justify-center">
-                  <Building2 className="w-6 h-6 text-white" />
+                <img
+    src="/assests/build.svg"
+    alt="Logo"
+    className="w-7 h-7 object-contain"
+  />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">
@@ -227,7 +272,11 @@ export default function ValuesSection() {
               {/* Account Place */}
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 w-12 h-12 bg-[#7c40fe] rounded-full flex items-center justify-center">
-                  <Wallet className="w-6 h-6 text-white" />
+                <img
+    src="/assests/main-acc.svg"
+    alt="Logo"
+    className="w-7 h-7 object-contain"
+  />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">
