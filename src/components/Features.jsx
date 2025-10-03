@@ -19,12 +19,12 @@ export default function Feature() {
         {/* Features Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/* Row 1: Earn Rewards + Always Protected */}
-          <div className="bg-gray-100 rounded-3xl p-8 lg:col-span-1 flex flex-col overflow-hidden" style={{height: '420px'}}>
+          <div className="bg-gray-100 rounded-3xl p-8 lg:col-span-1 flex flex-col overflow-hidden h-[380px] sm:h-[400px] lg:h-[420px]">
             <div className="flex-shrink-0">
               <h2 className="text-3xl font-bold text-gray-900 mb-3">
                 Earn Rewards
               </h2>
-              <p className="text-gray-600 mb-6 text-sm">
+              <p className="text-gray-600 mb-4 sm:mb-6 text-sm">
                 It costs nothing to pay with PayPal, you'll only be<br />
                 charged a fee when you sell something or<br />
                 request a payment.
@@ -39,51 +39,51 @@ export default function Feature() {
             </div>
           </div>
 
-          <div className="bg-[#d9c1ff] rounded-3xl p-8 lg:col-span-2 flex flex-col overflow-hidden" style={{height: '420px'}}>
+          <div className="bg-[#d9c1ff] rounded-3xl p-8 lg:col-span-2 flex flex-col overflow-hidden h-[380px] sm:h-[400px] lg:h-[420px]">
             <div className="flex-shrink-0">
               <h2 className="text-3xl font-bold text-gray-900 mb-3">
                 Always Protected
               </h2>
-              <p className="text-gray-600 mb-6 text-sm">
+              <p className="text-gray-600 mb-4 sm:mb-6 text-sm">
                 Shopping with Wishpay is saver with Buyer Protection, 24/7<br />
                 anti-fraud monitoring and world class security.
               </p>
             </div>
-            <div className="flex-1 flex justify-center items-end min-h-0 -mb-8 overflow-hidden mt-4 lg:mt-0">
+            <div className="flex-1 flex justify-center items-end min-h-0 -mb-8 overflow-hidden">
               <img
                 src="/assests/f1.png"
                 alt="Protection"
-                className="w-full lg:w-3/4 max-h-full object-contain object-bottom"
+                className="w-full sm:w-4/5 lg:w-3/4 max-h-full object-contain object-bottom"
               />
             </div>
           </div>
 
           {/* Row 2: No Asset Volatility + Get Paid Faster */}
-          <div className="bg-[#320053] rounded-3xl p-8 lg:col-span-2 flex flex-col overflow-hidden" style={{height: '420px'}}>
+          <div className="bg-[#320053] rounded-3xl p-8 lg:col-span-2 flex flex-col overflow-hidden h-[380px] sm:h-[400px] lg:h-[420px]">
             <div className="flex-shrink-0">
               <h2 className="text-3xl font-bold text-white mb-3">
                 No asset volatility
               </h2>
-              <p className="text-purple-200 mb-6 text-sm">
+              <p className="text-purple-200 mb-4 sm:mb-6 text-sm">
                 Generate returns on your cash reserves without making<br />
                 any investments.
               </p>
             </div>
-            <div className="flex-1 flex justify-center items-end min-h-0 -mb-8 overflow-hidden mt-4 lg:mt-0">
+            <div className="flex-1 flex justify-center items-end min-h-0 -mb-8 overflow-hidden">
               <img
                 src="/assests/g.png"
                 alt="Chart"
-                className="w-full lg:w-3/4 max-h-full object-contain object-bottom rounded-md"
+                className="w-full sm:w-4/5 lg:w-3/4 max-h-full object-contain object-bottom rounded-md"
               />
             </div>
           </div>
 
-          <div className="bg-[#ebebed] rounded-3xl p-8 lg:col-span-1 flex flex-col overflow-hidden" style={{height: '420px'}}>
+          <div className="bg-[#ebebed] rounded-3xl p-8 lg:col-span-1 flex flex-col overflow-hidden h-[380px] sm:h-[400px] lg:h-[420px]">
             <div className="flex-shrink-0">
               <h2 className="text-3xl font-bold text-gray-900 mb-3">
                 Get paid faster
               </h2>
-              <p className="text-gray-600 mb-6 text-sm">
+              <p className="text-gray-600 mb-4 sm:mb-6 text-sm">
                 Create flexible, scalable subscription plans and<br />
                 streamline billing.
               </p>
