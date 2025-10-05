@@ -1,14 +1,33 @@
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 export default function CTA() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      once: true,
+      easing: 'ease-out'
+    });
+  }, []);
+
   return (
     <div
-      className="min-h-screen py-20 px-4 flex items-center justify-center"
+      className="py-12 md:py-16 px-4 flex items-center justify-center"
       style={{
         background: "linear-gradient(to bottom, #ffffff 50%, #f3f4f6 50%)",
       }}
     >
       <div className="max-w-6xl w-full relative">
         
-        <div className="absolute left-1/2 transform -translate-x-1/2 z-30 -top-16 sm:-top-20 md:-top-28">
+        <div 
+          className="absolute left-1/2 z-30 -top-16 sm:-top-20 md:-top-28"
+          style={{ transform: 'translateX(-50%)' }}
+          data-aos="fade-left"
+          data-aos-anchor-placement="top-center"
+          data-aos-duration="1500"
+          data-aos-offset="300"
+        >
           <img
             src="/assests/coin.png"
             alt="Coin"

@@ -5,7 +5,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-white shadow-sm z-50">
+    <nav className="w-full bg-white z-50 relative">
       <div className="container mx-auto px-6 lg:px-12 py-4 flex items-center justify-between">
         {/* Logo with Text */}
         <div className="flex items-center gap-2">
@@ -65,13 +65,13 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu - Positioned Absolutely */}
       <div
-        className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+        className={`lg:hidden absolute top-full left-0 w-full bg-white shadow-lg transition-all duration-300 ease-in-out ${
           isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="container mx-auto px-6 pb-4 flex flex-col gap-4">
+        <div className="container mx-auto px-6 py-4 flex flex-col gap-4">
           {navLinks.map((link) => (
             <a
               key={link}
@@ -79,7 +79,7 @@ const Navbar = () => {
               className="text-gray-700 hover:text-purple-700 transition font-medium py-2"
               onClick={() => setIsOpen(false)}
             >
-              {link}
+              {link} 
             </a>
           ))}
           <div className="flex flex-col gap-3 pt-2">

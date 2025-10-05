@@ -1,9 +1,21 @@
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 export default function Feature() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: 'ease-out'
+    });
+  }, []);
+
   return (
-    <div className="min-h-screen bg-gray-50 py-20 px-4">
+    <div className="bg-gray-50 py-12 md:py-16 lg:py-20 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-16" data-aos="fade-up">
           <span className="inline-block px-4 py-1.5 bg-purple-100 text-purple-600 rounded-full text-sm font-medium mb-6">
             FEATURE
           </span>
@@ -19,7 +31,7 @@ export default function Feature() {
         {/* Features Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/* Row 1: Earn Rewards + Always Protected */}
-          <div className="bg-gray-100 rounded-3xl p-8 lg:col-span-1 flex flex-col overflow-hidden h-[380px] sm:h-[400px] lg:h-[420px]">
+          <div className="bg-gray-100 rounded-3xl p-8 lg:col-span-1 flex flex-col overflow-hidden h-[380px] sm:h-[400px] lg:h-[420px]" data-aos="fade-up">
             <div className="flex-shrink-0">
               <h2 className="text-3xl font-bold text-gray-900 mb-3">
                 Earn Rewards
@@ -30,7 +42,7 @@ export default function Feature() {
                 request a payment.
               </p>
             </div>
-            <div className="flex-1 flex justify-center items-end min-h-0">
+            <div className="flex-1 flex justify-center items-end min-h-0" data-aos="fade-up" data-aos-delay="200">
               <img
                 src="/assests/gift.png"
                 alt="Gift"
@@ -39,7 +51,7 @@ export default function Feature() {
             </div>
           </div>
 
-          <div className="bg-[#d9c1ff] rounded-3xl p-8 lg:col-span-2 flex flex-col overflow-hidden h-[380px] sm:h-[400px] lg:h-[420px]">
+          <div className="bg-[#d9c1ff] rounded-3xl p-8 lg:col-span-2 flex flex-col overflow-hidden h-[380px] sm:h-[400px] lg:h-[420px]" data-aos="fade-up" data-aos-delay="100">
             <div className="flex-shrink-0">
               <h2 className="text-3xl font-bold text-gray-900 mb-3">
                 Always Protected
@@ -49,7 +61,7 @@ export default function Feature() {
                 anti-fraud monitoring and world class security.
               </p>
             </div>
-            <div className="flex-1 flex justify-center items-end min-h-0 -mb-8 overflow-hidden">
+            <div className="flex-1 flex justify-center items-end min-h-0 -mb-8 overflow-hidden" data-aos="fade-up" data-aos-delay="300">
               <img
                 src="/assests/f1.png"
                 alt="Protection"
@@ -59,7 +71,7 @@ export default function Feature() {
           </div>
 
           {/* Row 2: No Asset Volatility + Get Paid Faster */}
-          <div className="bg-[#320053] rounded-3xl p-8 lg:col-span-2 flex flex-col overflow-hidden h-[380px] sm:h-[400px] lg:h-[420px]">
+          <div className="bg-[#320053] rounded-3xl p-8 lg:col-span-2 flex flex-col overflow-hidden h-[380px] sm:h-[400px] lg:h-[420px]" data-aos="fade-up" data-aos-delay="200">
             <div className="flex-shrink-0">
               <h2 className="text-3xl font-bold text-white mb-3">
                 No asset volatility
@@ -69,7 +81,7 @@ export default function Feature() {
                 any investments.
               </p>
             </div>
-            <div className="flex-1 flex justify-center items-end min-h-0 -mb-8 overflow-hidden">
+            <div className="flex-1 flex justify-center items-end min-h-0 -mb-8 overflow-hidden" data-aos="fade-up" data-aos-delay="400">
               <img
                 src="/assests/g.png"
                 alt="Chart"
@@ -78,7 +90,7 @@ export default function Feature() {
             </div>
           </div>
 
-          <div className="bg-[#ebebed] rounded-3xl p-8 lg:col-span-1 flex flex-col overflow-hidden h-[380px] sm:h-[400px] lg:h-[420px]">
+          <div className="bg-[#ebebed] rounded-3xl p-8 lg:col-span-1 flex flex-col overflow-hidden h-[380px] sm:h-[400px] lg:h-[420px]" data-aos="fade-up" data-aos-delay="300">
             <div className="flex-shrink-0">
               <h2 className="text-3xl font-bold text-gray-900 mb-3">
                 Get paid faster
@@ -88,7 +100,7 @@ export default function Feature() {
                 streamline billing.
               </p>
             </div>
-            <div className="flex-1 flex justify-center items-end min-h-0 -mb-8">
+            <div className="flex-1 flex justify-center items-end min-h-0 -mb-8" data-aos="fade-up" data-aos-delay="500">
               <img
                 src="/assests/mob.png"
                 alt="Mobile"

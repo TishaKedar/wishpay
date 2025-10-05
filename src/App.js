@@ -1,19 +1,29 @@
-import React from "react";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Values from "./components/Values";
-import Features from "./components/Features";
-import Integration from "./components/Integration";
-import Pricing from "./components/Pricing";
-import FAQ from "./components/FAQ";
-import CTA from "./components/CTA";
-import Footer from "./components/Footer";
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import Values from './components/Values';
+import Features from './components/Features';
+import Integration from './components/Integration';
+import Pricing from './components/Pricing';
+import FAQ from './components/FAQ';
+import CTA from './components/CTA';
+import Footer from './components/Footer';
 
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+      easing: 'ease-out',
+    });
+  }, []);
+
   return (
-    <div className="font-sans bg-white">
+    <div>
       <Navbar />
       <Hero />
       <Values />
@@ -24,6 +34,7 @@ function App() {
       <CTA />
       <Footer />
     </div>
+
   );
 }
 

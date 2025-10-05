@@ -1,7 +1,17 @@
-import React from 'react';
-
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function ValuesSection() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: false,
+      mirror: true,
+      easing: 'ease-out'
+    });
+  }, []);
+
   return (
     <section className="w-full bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
@@ -25,7 +35,7 @@ export default function ValuesSection() {
           {/* Desktop Layout - Show on xl screens */}
           <div className="hidden xl:block relative min-h-[600px]">
             {/* Security Teams - Top Left */}
-            <div className="absolute top-20 left-44 max-w-xs">
+            <div className="absolute top-20 left-44 max-w-xs" data-aos="fade-right">
               <div className="flex flex-col items-start">
               <div className="w-14 h-14 bg-[#7c40fe] rounded-full flex items-center justify-center mb-4">
   <img
@@ -45,7 +55,7 @@ export default function ValuesSection() {
             </div>
 
             {/* Authentication - Top Right */}
-            <div className="absolute top-1 right-44 max-w-xs">
+            <div className="absolute top-1 right-44 max-w-xs" data-aos="fade-left">
               <div className="flex flex-col items-start">
                 <div className="w-14 h-14 bg-[#7c40fe] rounded-full flex items-center justify-center mb-4">
                 <img
@@ -73,7 +83,7 @@ export default function ValuesSection() {
             </div>
 
             {/* Safety Funds - Bottom Left */}
-            <div className="absolute bottom-20 left-52 max-w-xs">
+            <div className="absolute bottom-20 left-52 max-w-xs" data-aos="fade-right">
               <div className="flex flex-col items-start">
                 <div className="w-14 h-14 bg-[#7c40fe] rounded-full flex items-center justify-center mb-4">
                 <img
@@ -92,7 +102,7 @@ export default function ValuesSection() {
             </div>
 
             {/* Account Place - Bottom Right */}
-            <div className="absolute bottom-32 right-32 max-w-xs">
+            <div className="absolute bottom-32 right-32 max-w-xs" data-aos="fade-left">
               <div className="flex flex-col items-start">
                 <div className="w-14 h-14 bg-[#7c40fe] rounded-full flex items-center justify-center mb-4">
                 <img
@@ -114,7 +124,7 @@ export default function ValuesSection() {
           {/* Medium Screen Layout - Optimized for 1024-1279px */}
           <div className="hidden md:block xl:hidden relative min-h-[500px]">
             {/* Security Teams - Top Left - Closer to card */}
-            <div className="absolute top-8 left-8 lg:left-16 max-w-[200px] lg:max-w-[220px]">
+            <div className="absolute top-8 left-8 lg:left-16 max-w-[200px] lg:max-w-[220px]" data-aos="fade-right">
               <div className="flex flex-col items-start">
                 <div className="w-12 h-12 bg-[#7c40fe] rounded-full flex items-center justify-center mb-3">
                 <img
@@ -133,7 +143,7 @@ export default function ValuesSection() {
             </div>
 
             {/* Authentication - Top Right - Closer to card */}
-            <div className="absolute top-4 right-8 lg:right-16 max-w-[200px] lg:max-w-[220px]">
+            <div className="absolute top-4 right-8 lg:right-16 max-w-[200px] lg:max-w-[220px]" data-aos="fade-left">
               <div className="flex flex-col items-start">
                 <div className="w-12 h-12 bg-[#7c40fe] rounded-full flex items-center justify-center mb-3">
                 <img
@@ -161,7 +171,7 @@ export default function ValuesSection() {
             </div>
 
             {/* Safety Funds - Bottom Left - Closer to card */}
-            <div className="absolute bottom-8 left-8 lg:left-20 max-w-[200px] lg:max-w-[220px]">
+            <div className="absolute bottom-8 left-8 lg:left-20 max-w-[200px] lg:max-w-[220px]" data-aos="fade-right">
               <div className="flex flex-col items-start">
                 <div className="w-12 h-12 bg-[#7c40fe] rounded-full flex items-center justify-center mb-3">
                 <img
@@ -180,7 +190,7 @@ export default function ValuesSection() {
             </div>
 
             {/* Account Place - Bottom Right - Closer to card */}
-            <div className="absolute bottom-16 right-8 lg:right-20 max-w-[200px] lg:max-w-[220px]">
+            <div className="absolute bottom-16 right-8 lg:right-20 max-w-[200px] lg:max-w-[220px]" data-aos="fade-left">
               <div className="flex flex-col items-start">
                 <div className="w-12 h-12 bg-[#7c40fe] rounded-full flex items-center justify-center mb-3">
                 <img
@@ -213,7 +223,7 @@ export default function ValuesSection() {
             {/* Features Grid for Mobile */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
               {/* Security Teams */}
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-4" data-aos="fade-up" data-aos-delay="0">
                 <div className="flex-shrink-0 w-12 h-12 bg-[#7c40fe] rounded-full flex items-center justify-center">
                 <img
     src="/assests/shield.svg"
@@ -232,7 +242,7 @@ export default function ValuesSection() {
               </div>
 
               {/* Authentication */}
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-4" data-aos="fade-up" data-aos-delay="100">
                 <div className="flex-shrink-0 w-12 h-12 bg-[#7c40fe] rounded-full flex items-center justify-center">
                 <img
     src="/assests/people.svg"
@@ -251,7 +261,7 @@ export default function ValuesSection() {
               </div>
 
               {/* Safety Funds */}
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-4" data-aos="fade-up" data-aos-delay="200">
                 <div className="flex-shrink-0 w-12 h-12 bg-[#7c40fe] rounded-full flex items-center justify-center">
                 <img
     src="/assests/build.svg"
@@ -270,7 +280,7 @@ export default function ValuesSection() {
               </div>
 
               {/* Account Place */}
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-4" data-aos="fade-up" data-aos-delay="300">
                 <div className="flex-shrink-0 w-12 h-12 bg-[#7c40fe] rounded-full flex items-center justify-center">
                 <img
     src="/assests/main-acc.svg"
